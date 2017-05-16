@@ -5,16 +5,18 @@ import { CreditGuardApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {LayoutPage} from "../pages/layout-page/layout.page";
-import {OverviewPage} from "../pages/overview-page/overview.page";
-import {CreditPage} from "../pages/credit-page/credit.page";
+import {LayoutPage} from "../pages/layout.page";
+import {OverviewPage} from "../pages/overview/overview.page";
+import {CreditPage} from "../pages/credit/credit.page";
+import {SettingsPage} from "../pages/settings/settings.page";
 
 @NgModule({
   declarations: [
     CreditGuardApp,
+    LayoutPage,
     OverviewPage,
     CreditPage,
-    LayoutPage
+    SettingsPage
   ],
   imports: [
     BrowserModule,
@@ -23,9 +25,10 @@ import {CreditPage} from "../pages/credit-page/credit.page";
   bootstrap: [IonicApp],
   entryComponents: [
     CreditGuardApp,
+    LayoutPage,
     OverviewPage,
     CreditPage,
-    LayoutPage
+    SettingsPage
   ],
   providers: [
     StatusBar,
