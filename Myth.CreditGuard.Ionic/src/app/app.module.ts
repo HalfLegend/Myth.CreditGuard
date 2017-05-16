@@ -9,6 +9,8 @@ import {LayoutPage} from "../pages/layout.page";
 import {OverviewPage} from "../pages/overview/overview.page";
 import {CreditPage} from "../pages/credit/credit.page";
 import {SettingsPage} from "../pages/settings/settings.page";
+import {CreditManagementPage} from "../pages/settings/credit-management/credit-management.page";
+import {BankManagementPage} from "../pages/settings/bank-management/bank-management.page";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {SettingsPage} from "../pages/settings/settings.page";
     LayoutPage,
     OverviewPage,
     CreditPage,
-    SettingsPage
+    SettingsPage,
+    CreditManagementPage,
+    BankManagementPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import {SettingsPage} from "../pages/settings/settings.page";
     LayoutPage,
     OverviewPage,
     CreditPage,
-    SettingsPage
+    SettingsPage,
+    CreditManagementPage,
+    BankManagementPage
   ],
   providers: [
     StatusBar,
