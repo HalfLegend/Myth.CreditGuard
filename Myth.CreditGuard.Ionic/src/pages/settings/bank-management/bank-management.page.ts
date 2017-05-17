@@ -1,10 +1,10 @@
 import {Component} from "@angular/core";
 
 @Component({
-  templateUrl:"bank-management.html"
+  templateUrl: "bank-management.html"
 })
-export class BankManagementPage{
-  public static get title():string{
+export class BankManagementPage {
+  public static get title(): string {
     return "Bank Management";
   }
 }

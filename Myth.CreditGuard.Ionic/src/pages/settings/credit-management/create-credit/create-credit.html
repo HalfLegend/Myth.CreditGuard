@@ -1,0 +1,48 @@
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Card Number</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Bank</ion-label>
+      <ion-select>
+        <ion-option>ABC</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Nick</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Type</ion-label>
+      <ion-select>
+        <ion-option>Credit Card</ion-option>
+        <ion-option>Loan</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Credit or Loan Amount</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Billing Day</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Due Mode</ion-label>
+      <ion-select>
+        <ion-option>X days after billing</ion-option>
+        <ion-option>Fixed day of a month</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Due Day</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+        <button ion-button outline item-end (click)="cancelCommand()">Cancel</button>
+        <button ion-button outline item-end>OK</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

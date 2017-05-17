@@ -11,6 +11,7 @@ import {CreditPage} from "../pages/credit/credit.page";
 import {SettingsPage} from "../pages/settings/settings.page";
 import {CreditManagementPage} from "../pages/settings/credit-management/credit-management.page";
 import {BankManagementPage} from "../pages/settings/bank-management/bank-management.page";
+import {CreateCreditPage} from "../pages/settings/credit-management/create-credit/create-credit.page";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import {BankManagementPage} from "../pages/settings/bank-management/bank-managem
     CreditPage,
     SettingsPage,
     CreditManagementPage,
+    CreateCreditPage,
     BankManagementPage
   ],
   imports: [
@@ -34,6 +36,7 @@ import {BankManagementPage} from "../pages/settings/bank-management/bank-managem
     CreditPage,
     SettingsPage,
     CreditManagementPage,
+    CreateCreditPage,
     BankManagementPage
   ],
   providers: [
