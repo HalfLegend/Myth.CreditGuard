@@ -11,11 +11,16 @@ import {CreditPage} from "../pages/credit/credit.page";
 import {SettingsPage} from "../pages/settings/settings.page";
 import {CreditManagementPage} from "../pages/settings/credit-management/credit-management.page";
 import {BankManagementPage} from "../pages/settings/bank-management/bank-management.page";
-import {CreateCreditPage} from "../pages/settings/credit-management/create-credit/create-credit.page";
+import {CreateCreditPage} from "../pages/settings/credit-management/credit-creation/credit-creation.page";
+import {BankCreationPageModule} from "../pages/settings/bank-management/bank-creation/bank-creation.page.module";
+import {DueModeEnumPipe} from "../model/due-mode.enum";
+import {SqliteService} from "../service/sqlite-service";
+import {SQLite} from "@ionic-native/sqlite";
 
 @NgModule({
   declarations: [
     CreditGuardApp,
+    DueModeEnumPipe,
     LayoutPage,
     OverviewPage,
     CreditPage,
@@ -26,7 +31,8 @@ import {CreateCreditPage} from "../pages/settings/credit-management/create-credi
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(CreditGuardApp)
+    IonicModule.forRoot(CreditGuardApp),
+    BankCreationPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,10 +44,13 @@ import {CreateCreditPage} from "../pages/settings/credit-management/create-credi
     CreditManagementPage,
     CreateCreditPage,
     BankManagementPage
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    SQLite,
+    SqliteService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

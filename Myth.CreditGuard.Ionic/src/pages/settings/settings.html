@@ -1,5 +1,5 @@
 <ion-content>
   <ion-list margin-top inset>
-    <button ion-item *ngFor="let settingPage of settingPages" (click)="navSettingPage(settingPage)">{{settingPage.title}}</button>
+    <button ion-item *ngFor="let settingPage of settingPages" [navPush]="settingPage">{{settingPage.title}}</button>
   </ion-list>
 </ion-content>

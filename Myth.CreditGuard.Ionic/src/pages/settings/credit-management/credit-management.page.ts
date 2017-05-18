@@ -1,20 +1,18 @@
 import {Component} from "@angular/core";
-import {CreateCreditPage} from "./create-credit/create-credit.page";
+import {CreateCreditPage} from "./credit-creation/credit-creation.page";
 import {NavController} from "ionic-angular";
 
 @Component({
-  templateUrl:"credit-management.html"
+  templateUrl: "credit-management.html"
 })
-export class CreditManagementPage{
-    public static get title():string{
-      return "Credit Management";
-    }
+export class CreditManagementPage {
+  CreateCreditPage: any = CreateCreditPage;
+
+  public static get title(): string {
+    return "Credit Management";
+  }
 
   constructor(public nav: NavController) {
 
-  }
-
-  public createCreditCommand(): void {
-    this.nav.push(CreateCreditPage);
   }
 }

@@ -19,8 +19,4 @@ export class SettingsPage {
   constructor(public nav: NavController){
     this.settingPages.push(CreditManagementPage, BankManagementPage);
   }
-
-  navSettingPage(settingPage : any){
-    this.nav.push(settingPage);
-  }
 }
