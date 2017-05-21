@@ -1,0 +1,32 @@
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Bank Name</ion-label>
+      <ion-input></ion-input>
+      <ion-note item-end>银行</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Abbr.</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Billing Day</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Due Mode</ion-label>
+      <ion-select>
+        <ion-option value="">Not set</ion-option>
+        <ion-option *ngFor="let enumItem of DueModeEnum | EnumItemPipe" value="{{enumItem.value}}">{{enumItem.label}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Due Day</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button outline item-end navPop>Cancel</button>
+      <button ion-button outline item-end (click)="saveBankCommand()">OK</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
