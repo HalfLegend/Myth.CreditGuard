@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using Myth.CreditGuard.Sharp.Pages;
 
 namespace Myth.CreditGuard.Sharp
 {
@@ -8,7 +9,7 @@ namespace Myth.CreditGuard.Sharp
         {
             InitializeComponent();
 
-            MainPage = new Myth_CreditGuard_SharpPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
