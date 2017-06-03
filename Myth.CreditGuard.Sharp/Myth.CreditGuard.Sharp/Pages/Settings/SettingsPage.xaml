@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:fw="clr-namespace:Myth.CreditGuard.Sharp.Framework"
+    x:Class="Myth.CreditGuard.Sharp.Pages.Settings.SettingsPage"
+    Title="Settings" Icon="{fw:ImageResourceExtension settings.png}">
+    <Label Text="Settings Page" HorizontalOptions="Center" VerticalOptions="Center" />
+</ContentPage>
